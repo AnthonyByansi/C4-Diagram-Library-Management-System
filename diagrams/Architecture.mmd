@@ -1,0 +1,87 @@
+graph TB
+
+subgraph System Context
+  A[Client App]
+  B[API Gateway]
+  C[Authentication Service]
+  D[Database]
+
+  A --> B
+  B --> C
+  B --> D
+end
+
+subgraph Containers
+  subgraph Client App Container
+    AA[React UI]
+    AB[Redux Store]
+    AC[API Client]
+
+    AA --> AB
+    AA --> AC
+    AB --> AC
+    AC --> B
+  end
+
+  subgraph API Gateway Container
+    BA[Express App]
+    BB[Authentication Middleware]
+    BC[API Endpoints]
+
+    BA --> BB
+    BA --> BC
+    BB --> C
+    BC --> D
+  end
+
+  subgraph Authentication Service Container
+    CA[Node.js App]
+    CB[Passport.js]
+    CC[Database Connector]
+
+    CA --> CB
+    CB --> CC
+    CC --> D
+  end
+end
+
+subgraph Components
+  subgraph Client App Components
+    AAA[Header]
+    AAB[Footer]
+    AAC[Dashboard]
+    AAD[Profile]
+    AAE[Settings]
+
+    AAA --> AA
+    AAB --> AA
+    AAC --> AA
+    AAD --> AA
+    AAE --> AA
+  end
+
+  subgraph API Gateway Components
+    BAA[Authentication Endpoint]
+    BAB[Books Endpoint]
+    BAC[Users Endpoint]
+
+    BAA --> BC
+    BAB --> BC
+    BAC --> BC
+  end
+
+  subgraph Authentication Service Components
+    CAA[Registration Module]
+    CAB[Login Module]
+    CAC[Token Generation Module]
+
+    CAA --> CA
+    CAB --> CA
+    CAC --> CA
+  end
+end
+
+style A fill:#FFA07A,stroke:#222,stroke-width:2px
+style B fill:#87CEEB,stroke:#222,stroke-width:2px
+style C fill:#90EE90,stroke:#222,stroke-width:2px
+style D fill:#FFD700,stroke:#222,stroke-width:2px
