@@ -20,7 +20,7 @@ To render the Mermaid.js diagram locally, you can use the [Mermaid Live Editor](
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code and documentation.
+This repository is licensed under the [MIT License](./LICENSE). You are free to use, modify, and distribute the code and documentation.
 
 ## Contributions
 
