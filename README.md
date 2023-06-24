@@ -1,5 +1,4 @@
 # C4-Diagram-Library-Management-System
-# C4 Diagram - Library Management System
 
 This repository contains a C4 diagram illustrating the system architecture of a Library Management System. The C4 diagram provides a high-level view of the system components, their relationships, and interactions.
 
