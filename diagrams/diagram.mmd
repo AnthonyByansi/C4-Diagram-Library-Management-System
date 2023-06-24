@@ -1,0 +1,10 @@
+erDiagram
+    CUSTOMER }|..|{ BOOK-LOAN : borrows
+    CUSTOMER ||--o{ LIBRARY-MEMBER : registers
+    CUSTOMER ||--o{ FINE : incurs
+    BOOK-LOAN ||--|{ BOOK : contains
+    BOOK-LOAN ||--|{ LIBRARY-MEMBER : issued-to
+    BOOK ||--o{ BOOK-LOAN : "borrowed in"
+    LIBRARY-MEMBER ||--o{ BOOK-LOAN : "issued in"
+    LIBRARY-MEMBER ||--|{ LIBRARY-STAFF : manages
+    BOOK-CATEGORY ||--|{ BOOK : belongs-to
