@@ -7,7 +7,7 @@ This repository contains a C4 diagram illustrating the system architecture of a 
 
 The C4 diagram is represented using [Mermaid.js](https://mermaid-js.github.io/mermaid/) syntax. You can find the diagram code in the [diagrams/diagram.mmd](diagrams/diagram.mmd) file.
 
-![Library Management System C4 Diagram](images/library-management-system.png)
+![Library Management System C4 Diagram](./mermaid_Architecture.json)
 
 ## Documentation
 
